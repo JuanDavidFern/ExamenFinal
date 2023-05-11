@@ -309,6 +309,11 @@ public class Principal extends JFrame {
 		check = new JCheckBox("");
 		check.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				if (check.isSelected()) {
+					jtfFechaVenta.setEnabled(true);
+				} else {
+					jtfFechaVenta.setEnabled(false);
+				}
 
 			}
 		});
